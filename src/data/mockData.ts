@@ -1,0 +1,152 @@
+import { Alumni, Job, Event, SuccessStory, Donation } from '../types';
+
+export const mockAlumni: Alumni[] = [
+  {
+    id: '1',
+    name: 'Rajesh Kumar',
+    email: 'rajesh@example.com',
+    graduationYear: 2015,
+    department: 'Computer Science',
+    currentPosition: 'Senior Software Engineer',
+    company: 'Google',
+    location: 'Bangalore, India',
+    industry: 'Technology',
+    bio: 'Passionate about AI and machine learning. Love to mentor young engineers.',
+    achievements: ['Google Developer Expert', 'Led team of 15+ engineers', 'Published research in AI'],
+  },
+  {
+    id: '2',
+    name: 'Priya Sharma',
+    email: 'priya@example.com',
+    graduationYear: 2012,
+    department: 'Electrical Engineering',
+    currentPosition: 'VP of Engineering',
+    company: 'Tesla',
+    location: 'San Francisco, USA',
+    industry: 'Automotive/Clean Energy',
+    bio: 'Driving innovation in sustainable transportation and clean energy solutions.',
+    achievements: ['Led battery technology innovations', 'Tesla Model Y engineering lead'],
+  },
+  {
+    id: '3',
+    name: 'Amit Patel',
+    email: 'amit@example.com',
+    graduationYear: 2018,
+    department: 'Mechanical Engineering',
+    currentPosition: 'Founder & CEO',
+    company: 'GreenTech Solutions',
+    location: 'Mumbai, India',
+    industry: 'Clean Technology',
+    bio: 'Building sustainable solutions for a better tomorrow.',
+    achievements: ['Founded successful startup', 'Raised $5M in funding', 'Featured in Forbes 30 under 30'],
+  }
+];
+
+export const mockJobs: Job[] = [
+  {
+    id: '1',
+    title: 'Senior Full Stack Developer',
+    company: 'Microsoft',
+    location: 'Hyderabad, India',
+    type: 'Full-time',
+    department: 'Computer Science',
+    experience: '5-8 years',
+    salary: '₹25-35 LPA',
+    postedBy: 'Rajesh Kumar',
+    postedDate: '2024-01-15',
+    description: 'Join our team building next-generation cloud solutions.',
+    requirements: ['React', 'Node.js', 'Azure', 'TypeScript', 'Microservices'],
+  },
+  {
+    id: '2',
+    title: 'Mechanical Design Engineer',
+    company: 'Mahindra & Mahindra',
+    location: 'Chennai, India',
+    type: 'Full-time',
+    department: 'Mechanical Engineering',
+    experience: '2-5 years',
+    salary: '₹8-12 LPA',
+    postedBy: 'Amit Patel',
+    postedDate: '2024-01-10',
+    description: 'Design innovative automotive solutions for electric vehicles.',
+    requirements: ['CAD/CAM', 'SolidWorks', 'Automotive systems', 'Electric vehicles'],
+  },
+];
+
+export const mockEvents: Event[] = [
+  {
+    id: '1',
+    title: 'Annual Alumni Reunion 2024',
+    date: '2024-03-15',
+    time: '10:00 AM',
+    location: 'College Campus, Main Auditorium',
+    type: 'Reunion',
+    description: 'Join us for our biggest reunion celebration with networking, cultural programs, and more.',
+    registeredCount: 245,
+    maxCapacity: 500,
+  },
+  {
+    id: '2',
+    title: 'Tech Talk: AI in Modern Engineering',
+    date: '2024-02-20',
+    time: '6:00 PM',
+    location: 'Virtual Event',
+    type: 'Seminar',
+    description: 'Industry experts discuss the role of AI in various engineering disciplines.',
+    registeredCount: 156,
+    maxCapacity: 300,
+  },
+  {
+    id: '3',
+    title: 'Networking Mixer: Startup Ecosystem',
+    date: '2024-02-10',
+    time: '7:00 PM',
+    location: 'Hotel Taj, Bangalore',
+    type: 'Networking',
+    description: 'Connect with fellow alumni entrepreneurs and startup enthusiasts.',
+    registeredCount: 89,
+    maxCapacity: 150,
+  },
+];
+
+export const mockSuccessStories: SuccessStory[] = [
+  {
+    id: '1',
+    alumniId: '3',
+    title: 'From College Project to $5M Startup',
+    summary: 'How a simple college project evolved into a successful clean-tech startup.',
+    fullStory: 'Amit\'s journey began with a solar panel efficiency project in his final year...',
+    achievements: ['Founded GreenTech Solutions', 'Raised $5M Series A', 'Forbes 30 under 30'],
+    publishedDate: '2024-01-20',
+    category: 'Entrepreneurship',
+  },
+  {
+    id: '2',
+    alumniId: '2',
+    title: 'Leading Innovation at Tesla',
+    summary: 'From engineering student to VP of Engineering at one of the world\'s most innovative companies.',
+    fullStory: 'Priya\'s path to Tesla began with her passion for sustainable technology...',
+    achievements: ['Led Model Y battery team', 'VP of Engineering promotion', '15+ patents filed'],
+    publishedDate: '2024-01-18',
+    category: 'Corporate',
+  },
+];
+
+export const mockDonations: Donation[] = [
+  {
+    id: '1',
+    amount: 100000,
+    donor: 'Priya Sharma',
+    purpose: 'Infrastructure Development',
+    date: '2024-01-15',
+    anonymous: false,
+  },
+  {
+    id: '2',
+    amount: 50000,
+    donor: 'Anonymous',
+    purpose: 'Student Scholarships',
+    date: '2024-01-10',
+    anonymous: true,
+  },
+];
